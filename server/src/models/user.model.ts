@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema<IUSER>({
     googleId: { type: String, required: true,index:true,unique:true },
     name: { type: String, required: true },
     email: { type: String, required: true,unique:true,index:true },
-    avatar: { type: String, required: true },
+    avatar: { type: String },
 },{
     timestamps:true
 })

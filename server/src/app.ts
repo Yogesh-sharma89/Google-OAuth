@@ -5,7 +5,7 @@ import MongoStore from "connect-mongo";
 import envConfig from "./config/env.config";
 import passport from "passport";
 import authRouter from "./routers/auth.route";
-
+import "./config/passport" //register the google strategy 
 
 const app = express();
 

@@ -12,7 +12,7 @@ authRouter.get("/google/callback",passport.authenticate("google",{
     failureRedirect:"/login"
 }),
  (_req,res)=>{
-    res.redirect("/profile")
+    res.redirect("http://localhost:5173/home")
  }
 )
 
@@ -24,6 +24,8 @@ authRouter.get("/profile",protectRoute,(req,res)=>{
         user:req.user
     })
 });
+
+
 
 authRouter.post("/logout",protectRoute,(req,res,next)=>{
 
@@ -41,5 +43,7 @@ authRouter.post("/logout",protectRoute,(req,res,next)=>{
         })
     })
 })
+
+
 
 export default authRouter;
