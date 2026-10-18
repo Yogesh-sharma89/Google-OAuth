@@ -19,4 +19,4 @@ const IntializeConnection = async()=>{
     }
 }
 
-export default IntializeConnection;
+IntializeConnection();

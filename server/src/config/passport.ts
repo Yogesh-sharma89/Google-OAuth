@@ -29,7 +29,7 @@ passport.use(
                         googleId: profile.id,
                         email,
                         name: profile.displayName,
-                        avatar: profile.profileUrl
+                        avatar: profile.photos?.[0]?.value!
                     })
                 }
 
